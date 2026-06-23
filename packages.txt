@@ -1,5 +1,5 @@
 assertthat 
-feather 
+arrow
 knitr 
 kableExtra 
 htmlTable 
