@@ -39,7 +39,7 @@ survminer
 gtsummary
 broom.mixed
 splines2
-rcpparmadillo
+RcppArmadillo
 brmsmargins
 mice
 survival
