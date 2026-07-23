@@ -8,7 +8,10 @@ pkg_list <- pkg_list[nzchar(pkg_list)]
 
 install_if_not_present <- function(pkg) {
   if(!requireNamespace(pkg)){
-    install.packages(pkg, method='auto', repos='http://cran.us.r-project.org', type="source")
+    if(pkg=="cmdstanr"){
+      install.packages(pkg, method='auto', repos='https://mc-stan.org/r-packages/', type="source")
+    } else{
+      install.packages(pkg, method='auto', repos='http://cran.us.r-project.org', type="source")
   }
 }
 
